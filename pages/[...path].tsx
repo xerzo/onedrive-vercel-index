@@ -22,7 +22,7 @@ export default function Folders() {
         <Navbar />
         <div className="mx-auto w-full max-w-5xl p-4">
           <nav className="mb-4 flex items-center justify-between space-x-3 pl-1">
-            <Breadcrumb query={query} />
+            <Breadcrumb />
             <SwitchLayout />
           </nav>
           <FileListing query={query} />
