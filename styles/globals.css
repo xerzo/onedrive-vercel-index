@@ -1,4 +1,133 @@
-@tailwind base
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer utilities{.no-scrollbar::-webkit-scrollbar {;display:none}.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}.shit{background-image:url(https://i.imgur.com/cP9CL7h.jpg)}.idqoute{text-align:center;color:#a9c5e4}.idpark{text-align:center;color:#a9c5e4}i{color:#bc3a52;text-shadow:1px 1px rgba(20,20,20,0.95)}.th1-padding{padding:0;position:relative}.th1-blur{position:absolute;top:0;left:0;right:0;bottom:0;border-radius:3px;overflow:hidden}.td1 .th1-blur::before,.td2 .th1-blur::before{background-color:#1f2639;box-shadow:inset rgba(31,38,57,0.45) 0 100px 0}.th1-blur::before{content:'';position:absolute;top:-35px;left:-35px;right:-35px;bottom:-35px;-webkit-filter:blur(30px) saturate(320%);filter:blur(30px) saturate(320%);background-size:100vw auto;background-position:50% 50%;box-shadow:inset rgba(0,0,0,0.45) 0 100px 0}.th1{background:rgba(255,255,255,0.1) url(https://cdn.statically.io/gh/xerzo/iamzero.github.io/master/img/dark-textures.png) repeat 50% 50%;border:0;box-shadow:inset rgba(255,255,255,0.1) 0 0 0 1px,inset rgba(255,255,255,0.3) 0 1px 0;border-radius:3px;font-family:'Oswald',sans-serif;text-transform:uppercase;color:#fff;font-weight:400;font-size:1.5em;letter-spacing:2px;text-shadow:#000 0 -1px 0;padding:7px;-moz-osx-font-smoothing:grayscale;position:relative;text-align:center;margin-bottom:5px}.td1{vertical-align:text-top;background-color:rgba(20,14,25,0.8);padding:10px;margin:10px;min-width:250px;border-radius:4px;box-shadow:inset rgba(0,0,0,0.8) 0 1px 8px,rgba(255,255,255,0.1) 0 0 0 1px,rgba(255,255,255,0.1) 0 1px 0;text-align:left}.series{padding:6px 2px;font-size:.96em;letter-spacing:1px;padding:8px;border-radius:4px}.series:hover{border-radius:4px;background-color:rgba(72,64,87,0.6);box-shadow:inset rgba(0,0,0,0.8) 0 1px 8px,rgba(255,255,255,0.1) 0 0 0 1px,rgba(255,255,255,0.1) 0 1px 0}
+
+@layer utilities {
+
+	/* Chrome, Safari and Opera */
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+
+	.no-scrollbar {
+		-ms-overflow-style: none;
+		/* IE and Edge */
+		scrollbar-width: none;
+		/* Firefox */
+	}
+}
+
+.react-pdf__Page__canvas {
+	@apply mx-auto border border-gray-300/40 shadow;
+}
+
+.markdown-body ul {
+	@apply list-disc;
+}
+
+.markdown-body ol {
+	@apply list-decimal;
+}
+
+pre[class*='language-'],
+code[class*='language-'] {
+	@apply font-mono !important;
+}
+
+.shit {
+	background-image: url('https://i.imgur.com/cP9CL7h.jpg')
+}
+
+.idqoute {
+	text-align: center;
+	color: #a9c5e4
+}
+
+.idpark {
+	text-align: center;
+	color: #a9c5e4
+}
+
+i {
+	color: #bc3a52;
+	text-shadow: 1px 1px rgba(20, 20, 20, 0.95)
+}
+
+.th1-padding {
+	padding: 0;
+	position: relative
+}
+
+.th1-blur {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 3px;
+	overflow: hidden
+}
+
+.td1 .th1-blur::before,
+.td2 .th1-blur::before {
+	background-color: #1f2639;
+	box-shadow: inset rgba(31, 38, 57, 0.45) 0 100px 0
+}
+
+.th1-blur::before {
+	content: '';
+	position: absolute;
+	top: -35px;
+	left: -35px;
+	right: -35px;
+	bottom: -35px;
+	-webkit-filter: blur(30px) saturate(320%);
+	filter: blur(30px) saturate(320%);
+	background-size: 100vw auto;
+	background-position: 50% 50%;
+	box-shadow: inset rgba(0, 0, 0, 0.45) 0 100px 0
+}
+
+.th1 {
+	background: rgba(255, 255, 255, 0.1) url('https://cdn.statically.io/gh/xerzo/iamzero.github.io/master/img/dark-textures.png') repeat 50% 50%;
+	border: 0;
+	box-shadow: inset rgba(255, 255, 255, 0.1) 0 0 0 1px, inset rgba(255, 255, 255, 0.3) 0 1px 0;
+	border-radius: 3px;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: normal;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	text-shadow: #000 0 -1px 0;
+	padding: 7px;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	text-align: center;
+	margin-bottom: 5px
+}
+
+.td1 {
+	vertical-align: text-top;
+	background-color: rgba(20, 14, 25, 0.8);
+	padding: 10px;
+	margin: 10px;
+	min-width: 250px;
+	border-radius: 4px;
+	box-shadow: inset rgba(0, 0, 0, 0.8) 0 1px 8px, rgba(255, 255, 255, 0.1) 0 0 0 1px, rgba(255, 255, 255, 0.1) 0 1px 0;
+	text-align: left
+}
+
+.series {
+	padding: 6px 2px 6px 2px;
+	font-size: .96em;
+	letter-spacing: 1px;
+	padding: 8px;
+	border-radius: 4px
+}
+
+.series:hover {
+	border-radius: 4px;
+	background-color: rgba(72, 64, 87, 0.6);
+	box-shadow: inset rgba(0, 0, 0, 0.8) 0 1px 8px, rgba(255, 255, 255, 0.1) 0 0 0 1px, rgba(255, 255, 255, 0.1) 0 1px 0
+}
