@@ -40,7 +40,7 @@ export default function Home() {
 		
         </div>
       </main>
-		<Script src="https://cdn.statically.io/gh/xerzo/iamzero.github.io/master/js/some.js" />
+		<Script src="https://cdn.jsdelivr.net/gh/xerzo/iamzero.github.io@master/js/some.js" />
       <Footer />
     </div>
 	
